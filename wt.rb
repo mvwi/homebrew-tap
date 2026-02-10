@@ -5,21 +5,21 @@
 class Wt < Formula
   desc "Git worktree manager - streamlined workflow for feature branches"
   homepage "https://github.com/mvwi/wt"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mvwi/wt/releases/download/v0.6.0/wt_0.6.0_darwin_amd64.tar.gz"
-      sha256 "9871ee73ac7d0e2ea3d944e622e5e9c21158c76101e99d0badf820aaa2e72fbb"
+      url "https://github.com/mvwi/wt/releases/download/v0.6.1/wt_0.6.1_darwin_amd64.tar.gz"
+      sha256 "270a77e9e38edd165e6713154dbe3b0029440912e22fedf6256ada3333c0eb0f"
 
       def install
         bin.install "wt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mvwi/wt/releases/download/v0.6.0/wt_0.6.0_darwin_arm64.tar.gz"
-      sha256 "41034acdeffc6b51ad89cbaab09271c1d90d19560e49d384c2ac42bbd9079ac5"
+      url "https://github.com/mvwi/wt/releases/download/v0.6.1/wt_0.6.1_darwin_arm64.tar.gz"
+      sha256 "f26d57fc7896e14217922785eeb8b8f711277ea9bfbb94626e9cf969b37522d9"
 
       def install
         bin.install "wt"
@@ -29,15 +29,15 @@ class Wt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mvwi/wt/releases/download/v0.6.0/wt_0.6.0_linux_amd64.tar.gz"
-      sha256 "8663b1c354c9b816a7ab2b9db2f4512cd73098e8aa28c1c3de5ce3fada25cbb4"
+      url "https://github.com/mvwi/wt/releases/download/v0.6.1/wt_0.6.1_linux_amd64.tar.gz"
+      sha256 "c257d8abb5bf8f97d4c1cca10678f95897850c31ba1ccf868c150249dc007bf2"
       def install
         bin.install "wt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mvwi/wt/releases/download/v0.6.0/wt_0.6.0_linux_arm64.tar.gz"
-      sha256 "8065dd6a21ee06ccecde8bb4651dcee5a1017c7246dc9804d1df75f47bc9c91f"
+      url "https://github.com/mvwi/wt/releases/download/v0.6.1/wt_0.6.1_linux_arm64.tar.gz"
+      sha256 "919a5d30c564f7030ed09a387d2c7aae71c3132084ce75925efd3be585ec6d52"
       def install
         bin.install "wt"
       end
@@ -49,7 +49,7 @@ class Wt < Formula
       To enable shell integration (required for 'wt switch' and 'wt new' to change directories):
 
         Fish:  Add to ~/.config/fish/config.fish:
-               eval (wt init-shell fish)
+               wt init-shell fish | source
 
         Bash:  Add to ~/.bashrc:
                eval "$(wt init-shell bash)"
