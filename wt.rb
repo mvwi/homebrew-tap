@@ -5,21 +5,21 @@
 class Wt < Formula
   desc "Git worktree manager - streamlined workflow for feature branches"
   homepage "https://github.com/mvwi/wt"
-  version "1.1.1"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mvwi/wt/releases/download/v1.1.1/wt_1.1.1_darwin_amd64.tar.gz"
-      sha256 "09155554ac277ca6c28340a2010770a189d7b4a77e8b3078ee71f7656b57d96f"
+      url "https://github.com/mvwi/wt/releases/download/v1.2.0/wt_1.2.0_darwin_amd64.tar.gz"
+      sha256 "e89cacc1c2cb7a917a751415c750927d5a7efa06660b1d3c19c3138f21aa5951"
 
       def install
         bin.install "wt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mvwi/wt/releases/download/v1.1.1/wt_1.1.1_darwin_arm64.tar.gz"
-      sha256 "c5ebc55e62f25880331bd259ac8cb40785bd027abc0f17cc9ee92ee81f8348c8"
+      url "https://github.com/mvwi/wt/releases/download/v1.2.0/wt_1.2.0_darwin_arm64.tar.gz"
+      sha256 "b8cdec055050f00cff95b80d766543ee73a8d15d473687ef0e0bbb8fe6d314e4"
 
       def install
         bin.install "wt"
@@ -29,15 +29,15 @@ class Wt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mvwi/wt/releases/download/v1.1.1/wt_1.1.1_linux_amd64.tar.gz"
-      sha256 "4dec58168cb5af7e016c5825d35e60785b3ddb813d06cc32cf25c225401114eb"
+      url "https://github.com/mvwi/wt/releases/download/v1.2.0/wt_1.2.0_linux_amd64.tar.gz"
+      sha256 "a2489b3942d94c44e2ad8c58deccfe77defd92b08bd51c30c236511bd72eaef3"
       def install
         bin.install "wt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mvwi/wt/releases/download/v1.1.1/wt_1.1.1_linux_arm64.tar.gz"
-      sha256 "f7a057222968a849aa99b3bd234d896590c46d7ce329a325c4112b9a2b6546e4"
+      url "https://github.com/mvwi/wt/releases/download/v1.2.0/wt_1.2.0_linux_arm64.tar.gz"
+      sha256 "b23c12e8844f7767b27128d0cacf624510b67c9dd1ece456710d642ad72f66bb"
       def install
         bin.install "wt"
       end
