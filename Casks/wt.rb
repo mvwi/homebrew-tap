@@ -15,12 +15,12 @@ cask "wt" do
     on_intel do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "22ca72c54f1d3b6e3ff609279dd9a25df267e2403932a1adc2eeea6160c54788"
+      sha256 "5ec2259b07242b2549e8bf8361c81119b574d96d61f74afb2546d7b296fb357e"
     end
     on_arm do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "a9c7197a612ed3c418ee80d9841bc5f5665bc8ca3331e4be0f939a942d47d705"
+      sha256 "9acda01f3eed2c3f667cfb46a0cf522a7a8ae8afa2899477baa7ed8e74485013"
     end
   end
 
@@ -28,12 +28,12 @@ cask "wt" do
     on_intel do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "36d616a30b3892444e00152086882c948b2aec51c1c6bd30d511c56862ce6bf0"
+      sha256 "23ac99bb9734db02f0ec201306023afb4e3e142814c8ec33b8bfd410e69e16d5"
     end
     on_arm do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "c0907bf0cb3283848fd76e720dff792f76c85a6c92fdb6ff66778ab36db5394a"
+      sha256 "b6bdafc43246f2e653e3ddb1437d76f28521cad1bafcfa1d1f0415b5a86d7d27"
     end
   end
 
@@ -48,15 +48,15 @@ cask "wt" do
     "         wt init-shell fish | source"
     ""
     "  Bash:  Add to ~/.bashrc:"
-    "         eval "$(wt init-shell bash)""
+    "         eval \"$(wt init-shell bash)\""
     ""
     "  Zsh:   Add to ~/.zshrc:"
-    "         eval "$(wt init-shell zsh)""
+    "         eval \"$(wt init-shell zsh)\""
     ""
     "To generate shell completions:"
     "  wt completion fish | source"
-    "  eval "$(wt completion bash)""
-    "  eval "$(wt completion zsh)""
+    "  eval \"$(wt completion bash)\""
+    "  eval \"$(wt completion zsh)\""
   end
 
   # No zap stanza required
