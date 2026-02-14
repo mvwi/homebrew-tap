@@ -15,12 +15,12 @@ cask "wt" do
     on_intel do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "6890e4b98d50d332c55386cdbda26ef0591e0adb4cc72ceb13f2a9835bd8d533"
+      sha256 "22ca72c54f1d3b6e3ff609279dd9a25df267e2403932a1adc2eeea6160c54788"
     end
     on_arm do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "ba11c6eda9f0df8696e634ba76902d9ddee5862443f93c16964c0cb308a42904"
+      sha256 "a9c7197a612ed3c418ee80d9841bc5f5665bc8ca3331e4be0f939a942d47d705"
     end
   end
 
@@ -28,12 +28,12 @@ cask "wt" do
     on_intel do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "2b66fd7263fcadd6310b58e88093542b79f0a820015694441260b6325ca98292"
+      sha256 "36d616a30b3892444e00152086882c948b2aec51c1c6bd30d511c56862ce6bf0"
     end
     on_arm do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "13d4c0c7f12aba62594686967679590a23777a9b6d130cc25c3731cf5edf756f"
+      sha256 "c0907bf0cb3283848fd76e720dff792f76c85a6c92fdb6ff66778ab36db5394a"
     end
   end
 
