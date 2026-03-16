@@ -3,7 +3,7 @@ cask "wt" do
   name "wt"
   desc "Git worktree manager - streamlined workflow for feature branches"
   homepage "https://github.com/mvwi/wt"
-  version "1.14.1"
+  version "1.15.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "wt" do
     on_intel do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "655c6276c604154b4ac8ce6dafaaca050c35cfbe95ad20561c66cf7cdc1b9db0"
+      sha256 "2888ef3477c520024a578efb69c27139487f8ad0fba327f1fd8af2c8dcc2357f"
     end
     on_arm do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "ca406d9395fe40d9e1d6a765008ecb16fd8cab4d34d46184f6904d8fdfeafbf5"
+      sha256 "3f60651799990c0969d750097ad49569b58ace0b47e7ab4d8f1066a813483c63"
     end
   end
 
@@ -28,12 +28,12 @@ cask "wt" do
     on_intel do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "b5eaaae44ace3a8b1460e4bfd40de7b83474c142e6ea01604a173cf85f76e229"
+      sha256 "dba9514b37391c5018d86c902a45481b805a5dc7f24fdaa7194da348d74c176f"
     end
     on_arm do
       url "https://github.com/mvwi/wt/releases/download/v#{version}/wt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/mvwi/wt/"
-      sha256 "3dacddcdd8eabf81014c130b3d0da5c6400f0be02b90a38bb59f980a5a5532df"
+      sha256 "98851a1a1bbb9e567fcd2d95f8dc6d122f6e25204c2b9f0d7f568ca9e11b2c79"
     end
   end
 
