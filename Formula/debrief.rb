@@ -2,11 +2,11 @@ class Debrief < Formula
   include Language::Python::Virtualenv
 
   desc "Review coding-agent sessions and see what to change"
-  homepage "https://github.com/OWNER/debrief"
+  homepage "https://github.com/mvwi/debrief"
   # The release workflow rewrites the next two lines on each tag. Keep them together.
   url "https://files.pythonhosted.org/packages/source/d/debrief-cli/debrief_cli-0.1.0.tar.gz"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
-  # license: undecided
+  license "MIT"
 
   depends_on "python@3.14"
 
