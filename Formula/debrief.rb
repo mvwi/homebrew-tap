@@ -4,8 +4,8 @@ class Debrief < Formula
   desc "Review coding-agent sessions and see what to change"
   homepage "https://github.com/mvwi/debrief"
   # The release workflow rewrites the next two lines on each tag. Keep them together.
-  url "https://files.pythonhosted.org/packages/source/d/debrief-cli/debrief_cli-0.1.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  url "https://files.pythonhosted.org/packages/91/a1/bff27cac1444e4dde3534da1b035efd6629577c18a057b468ea8c9505ed3/debrief_cli-0.1.0.tar.gz"
+  sha256 "ff6c78f7bd139fd01d8c269f8b489a8ab0c0cd6c97b3e661ce085e342ae3ac8e"
   license "MIT"
 
   depends_on "python@3.14"
